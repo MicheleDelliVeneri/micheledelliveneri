@@ -12,7 +12,7 @@ import {
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-
+import { IoLogoGithub, IoLogoLinkedin, IoLogoGitlab } from 'react-icons/io5'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
@@ -136,7 +136,57 @@ const Home = () => {
             Data Operation Software Developer at SKAO
             </BioSection>
         </Section>
-        
+        <Section delay={0.3}>
+            <Heading as="h3" variant="section-title">
+            I ♥
+            </Heading>
+            <Paragraph>
+            RPGs, Flight Simulation, Strategy,
+            Physics, Astronomy, Astrophysics,
+            History, Sociology,
+            Programming, AI
+            </Paragraph>
+        </Section>
+        <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+        <ListItem>
+            <Link href="https://gitlab.com/MicheleDelliVeneri" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGitlab />}
+              >
+                GitLab
+              </Button>
+            </Link>
+            </ListItem>
+          <ListItem>
+            <Link href="https://github.com/micheledelliveneri" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                GitHub
+              </Button>
+            </Link>
+            </ListItem>
+            <ListItem>
+            <Link href="https://www.linkedin.com/in/michele-delli-veneri-a8987215b" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                LinkedIn
+              </Button>
+            </Link>
+            </ListItem>
+        </List>
+        </Section>
         </Container>
     )
 }
