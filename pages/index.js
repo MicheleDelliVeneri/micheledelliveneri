@@ -36,7 +36,7 @@ const Home = () => {
                 Hello I`m a Data Operation Software Developer at the SKA Observatory! 
             </Box>
             <Box display={{md:'flex'}}>
-                <Box fileGrow={1}>
+                <Box flexGrow={1}>
                     <Heading as='h2' variant="page-title">
                         Michele Delli Veneri
                     </Heading>
