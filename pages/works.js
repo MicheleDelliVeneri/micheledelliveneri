@@ -9,8 +9,8 @@ import { GridItem } from '../components/grid-item'
 const thumbFTS = '/images/works/fts-deployment.gif'
 const thumbIndigoIAM = '/images/works/indigo-iam-deployment.gif'
 const thumbRucioDeployment = '/images/works/rucio-deployment.gif'
-const thumbDIngestor = '/images/works/di-ingestor.png'
-const thumbIntegrationEnv = '/images/works/integration-environment.png'
+const thumbDIngestor = '/images/works/di-ingestor.jpg'
+const thumbIntegrationEnv = '/images/works/integration-environment.jpg'
 
 const Works = () => (
   <Layout title="Works">
@@ -34,7 +34,7 @@ const Works = () => (
             thumbnail={thumbFTS}
             href="https://gitlab.com/ska-telescope/src/src-dm/ska-src-dm-file-transfer-service-deployment"
           >
-            A dockerised version of FTS.
+            A dockerised/ k8s-based version of FTS to run in the SRCNet Integration and Staging Environments.
           </GridItem>
         </Section>
         <Section>
@@ -43,7 +43,7 @@ const Works = () => (
             thumbnail={thumbIndigoIAM}
             href="https://gitlab.com/ska-telescope/src/src-ugm/ska-src-ugm-indigo-iam-deployment"
           >
-            A dockerised/ k8s version of Indigo IAM. This may not currently reflect the deployed version within SRCNet.
+            A dockerised/ k8s-based version of INDIGO IAM to run in the SRCNet Integration and Staging Environments.
           </GridItem>
         </Section>
 
@@ -53,7 +53,7 @@ const Works = () => (
             thumbnail={thumbRucioDeployment}
             href="https://gitlab.com/ska-telescope/src/src-dm/ska-src-dm-rucio-deployment"
           >
-            A dockerised version of Rucio. This may not currently reflect the deployed version within SRCNet.
+            A dockerised/ k8s-based version of Rucio to run in the SRCNet Integration and Staging Environments.
           </GridItem>
         </Section>
 
