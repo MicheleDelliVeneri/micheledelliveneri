@@ -138,7 +138,7 @@ const Home = () => {
         </Section>
         <Section delay={0.3}>
             <Heading as="h3" variant="section-title">
-            I ♥
+            My interests            
             </Heading>
             <Paragraph>
             RPGs, Flight Simulation, Strategy,

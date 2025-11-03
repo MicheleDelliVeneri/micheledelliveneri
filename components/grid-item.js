@@ -6,13 +6,26 @@ import { Global } from '@emotion/react'
 export const GridItem = ({ children, href, title, thumbnail }) => (
   <Box w="100%" textAlign="center">
     <LinkBox cursor="pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-        loading="lazy"
-      />
+      <Box
+        w="100%"
+        position="relative"
+        overflow="hidden"
+        borderRadius="12px"
+        mb={2}
+        minH="180px"
+        style={{ aspectRatio: '16/9' }}
+      >
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          style={{ objectFit: 'cover' }}
+          loading="lazy"
+          unoptimized={thumbnail.endsWith('.gif')}
+        />
+      </Box>
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
       </LinkOverlay>
