@@ -1,6 +1,9 @@
 ## Hi there 👋
 
-My name is Michele Delli Veneri 
+I'm  Michele Delli Veneri, an Astrophysicist and Data Operation Software Developer at the 
+Square Kilometre Array Observatory
+
+- I'm involved in writing the API Stack for SKA Regional Center Network, writing Radio Interferometrical Simulations and testing AI on Radio Data
 
 <!--
 **MicheleDelliVeneri/micheledelliveneri** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
